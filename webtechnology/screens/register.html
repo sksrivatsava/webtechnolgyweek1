@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    form{
+        background-color: aquamarine;
+        
+    }
+    input,label{
+        margin: 10px;
+    }
+</style>
+</head>
+<body>
+    <center>
+        <div>
+
+            <form action="">
+
+                <label for="name">First name:</label><br>
+                <input type="text" id="name" name="name" required="" pattern="[A-Za-z]{2,}" title="A name must not contain numbers "><br>
+                <lable for="password">password</lable><br>
+                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+                <label for="email">email</label><br>
+                <input type="email" id="email" name="email" required=""><br> 
+                <label for="phone">phonenumber</label><br>
+                <input type="tel" id="phone" name="phone" required="" pattern="[7-9]{1}[0-9]{9}"><br>
+                <label>GENDER:</label><br>
+                <input type="radio" id="male" name="gender" value="male" required="">
+               
+                <label for="male">male</label><br>
+                <input type="radio" id="female" name="gender" value="female" required="">
+                <label for="female">female</label><br>
+                <label for="dob">DateofBirth:</label><br>
+                <input type="date" id="dob" name="dob" required=""><br>
+                <label>Languages:</label><br>
+                <input type="checkbox" id="hindi" name="hindi" value="hindi" > 
+                <label for="hindi"> HINDI</label><br>
+                <input type="checkbox" id="english" name="english" value="english" >
+                <label for="english"> english</label><br>
+                <input type="checkbox" id="telugu" name="telugu" value="telugu" >
+                <label for="telugu"> telugut</label><br><br>
+                <label for="address">address</label><br>
+                <textarea id="address" name="address" required=""></textarea><br>
+                <input type="submit" name="" value="submit">
+                <input type="reset" name="" value="reset">
+
+
+
+
+
+            </form>
+        </div>
+    </center>
+</body>
+</html>
